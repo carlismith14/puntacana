@@ -1,0 +1,362 @@
+
+* {
+box-sizing: border-box;
+margin: 0;
+/* overflow: hidden; */
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+
+/* general section styling */
+.section_header{
+    padding-top: 1em;
+    margin-bottom: .5em;
+    font-size: 3em;
+    color: red;
+    text-align: center;
+    
+}
+
+section{
+    margin-bottom: 7em;
+    /* height: 100vh; */
+    scroll-margin-top: 10vh;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+
+    
+    }
+
+li{
+    list-style: none;
+    /* background: orange; */
+    padding: .5em 1em;
+    }
+
+/*top bar*/
+.head_container{
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: .85rem;
+    gap: 2em;
+    padding-right: 1em;
+}
+
+
+.head_menu{
+    display: flex;
+    justify-content: space-between;
+    gap: .75em;
+}
+
+
+
+
+
+/*navbar*/
+
+header{
+    position:sticky;
+    width: 100%;
+    background-color: red;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+    transition: 0.6s;
+}
+
+.logo{
+    width: 200px;
+    padding-bottom: 1em;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+
+    /* gap:1em; */
+}
+
+nav li{
+    list-style: none;
+    /* background: orange; */
+    padding: .5em 1em;
+}
+
+nav a {
+text-decoration: none;
+text-transform: uppercase;
+font-weight: bolder;
+color: black;
+font-size: .75em;
+
+}
+
+nav :hover {
+    background: white;
+}
+
+nav :focus{
+    color: orange;
+}
+
+.container2{
+    display: flex;
+    gap: 50px;
+}
+
+
+/*about*/
+
+
+.about_hero_image{
+    margin-bottom: 3em;
+}
+
+.hero_img{
+    background: url("/Punta Cana/cs/untitled folder/images/resized-image-Promo.jpeg");
+    height: 50vh;
+    /* width: 50vw; */
+    background-repeat:repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: 50% 60% ;
+    margin-bottom: 3em;
+}
+
+
+.about_text{
+    width: 70%;
+    text-align:center;
+    margin: auto;
+}
+
+.about_header{
+    margin-bottom: .5em;
+    font-size: 3em;
+}
+
+
+/*main menu section*/
+
+.gridtest{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.foodsection{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menuimg{
+    width: 150px;
+}
+
+.food{
+    flex: 1;
+}
+
+.foodcategory{
+
+    border: 1px solid red;
+}
+
+.foodcategory1{
+    text-align: center;
+}
+
+
+.foodlist{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+/*catering section*/
+.menu_section{
+    width: 90%;
+    margin:0 auto;
+    /* text-align: center; */
+}
+
+
+/* menu "header" */
+.menu_intro_title{
+    text-align: center;
+    color: red;
+}
+
+.menu_intro_message{
+    text-align: center;
+    font-style: italic ;
+}
+
+
+
+.menu_item{
+display: flex;
+justify-content: space-between;
+margin: 2em;
+flex: 1;
+}
+
+.menu_item-title{
+    text-transform: uppercase;
+    font-size: .7rem;
+}
+
+.menu_item-descrip{
+    font-style: italic;
+    font-weight: normal;
+    f
+}
+
+.price{
+    font-size: .7rem;
+}
+
+.column_container{
+    justify-content: space-around;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+
+/*hours+location*/
+.hourslocal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+
+
+.day{
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.map{
+    margin: 0;
+}
+
+.hours{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.hourheader{
+    align-self: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 1em;
+}
+
+/*contact section*/
+
+.contactUs{
+    width: 100%;
+    height: 80vh;
+
+    background: #EDE6E6;
+    margin-bottom: 0;
+}
+
+
+label {
+    font-weight: 600;
+}
+
+.contactform{
+   display: flex;
+   justify-content: flex
+
+}
+
+label{
+    display: block;
+}
+input[type=text], select, textarea {
+    width: 30%;
+}
+
+i{
+    font-size: xx-large;
+}
+
+/*footer section*/
+footer{
+   
+    background: black;
+    color: white;
+
+}
+
+.footercol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer_container{
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+
+}
+
+.grubhub{
+    width: 90px;
+}
+
+@media (max-width: 800px) {
+    
+  
+
+   .column_container{
+    flex-direction:column;
+   }
+  }
+
