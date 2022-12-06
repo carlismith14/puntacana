@@ -128,6 +128,9 @@ nav :focus{
     gap: 50px;
 }
 
+.nav-toggle{
+    display: none;
+}
 
 /*about*/
 
@@ -165,7 +168,7 @@ nav :focus{
 .gridtest{
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: repeat(3, 1fr);
 }
 
@@ -353,7 +356,25 @@ footer{
 
 @media (max-width: 800px) {
     
+
+
+    .nav-toggle {
+        display: inline;
+        cursor: pointer;
+
+
+
+        color: white;
+        transition: opacity 250ms ease;
+        position: absolute;
+        right: 2em;
+      }
+
   
+    nav{
+        display: none;
+    }
+
 
    .column_container{
     flex-direction:column;
