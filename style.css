@@ -140,7 +140,7 @@ nav :focus{
 }
 
 .hero_img{
-    background: url("/Punta Cana/cs/untitled folder/images/resized-image-Promo.jpeg");
+    background: url("/images/resized-image-Promo.jpeg");
     height: 50vh;
     /* width: 50vw; */
     background-repeat:repeat;
@@ -168,7 +168,7 @@ nav :focus{
 .gridtest{
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-template-rows: repeat(3, 1fr);
 }
 
@@ -370,11 +370,26 @@ footer{
         right: 2em;
       }
 
+      .navbarc{
+        width: 100%;
+      }
   
-    nav{
+    .navvb{
         display: none;
+        position:fixed ;
+        top: 5.6em;
+        left: 0;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background:red;
+        /* height: 100vh; */
     }
 
+    .active{
+        display: block;
+    }
 
    .column_container{
     flex-direction:column;
