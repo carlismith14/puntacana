@@ -1,8 +1,13 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,100&display=swap');
 * {
 box-sizing: border-box;
 margin: 0;
 /* overflow: hidden; */
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -17,11 +22,15 @@ img{
 
 /* general section styling */
 .section_header{
-    padding-top: 1em;
+    padding-top: .5em;
     margin-bottom: .5em;
-    font-size: 3em;
+    font-size: 5em;
     color: red;
     text-align: center;
+    font-family: 'Alex Brush', cursive;
+    font-weight: normal;
+
+    display: block;
     
 }
 
@@ -141,7 +150,7 @@ nav :focus{
 
 .hero_img{
     background: url("/images/resized-image-Promo.jpeg");
-    height: 50vh;
+    height: 70vh;
     /* width: 50vw; */
     background-repeat:repeat;
     background-size:cover;
@@ -157,13 +166,43 @@ nav :focus{
     margin: auto;
 }
 
+.about_content{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
 .about_header{
     margin-bottom: .5em;
     font-size: 3em;
 }
 
+.about1{
+    flex:1
+}
+
+.about_img{
+    width: 20%
+}
+
+#typedtext{
+    display: grid;
+    /* position: fixed; */
+    padding-top: .7em;
+    place-items: center;
+    text-align: center;
+    font-family: 'Alex Brush', cursive;
+    font-weight: normal;
+    font-size: 12em;
+    color: white;
+}
 
 /*main menu section*/
+
+.main_menu_section{
+    width: 90%;
+    margin: 0 auto;
+}
 
 .gridtest{
     display: grid;
@@ -177,8 +216,13 @@ nav :focus{
     justify-content: space-between;
 }
 
+.meat{
+    /* grid-column: span 2; */
+}
+
 .menuimg{
     width: 150px;
+    object-fit:cover;
 }
 
 .food{
@@ -295,13 +339,20 @@ flex: 1;
 
 /*contact section*/
 
+.contactUs_container{
+    width: 60%;
+    background-color: #ddd;
+    margin: auto;
+    padding: 2em;
+}
+
 .contactUs{
     width: 100%;
-    height: 80vh;
+    height: 70vh;
 
     background: #EDE6E6;
     margin-bottom: 0;
-}
+} 
 
 
 label {
@@ -327,10 +378,8 @@ i{
 
 /*footer section*/
 footer{
-   
     background: black;
     color: white;
-
 }
 
 .footercol{
@@ -338,7 +387,6 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 .footer_container{
@@ -356,7 +404,6 @@ footer{
 
 @media (max-width: 800px) {
     
-
 
     .nav-toggle {
         display: inline;
@@ -376,7 +423,7 @@ footer{
   
     .navvb{
         display: none;
-        position:fixed ;
+        position:fixed;
         top: 5.6em;
         left: 0;
         text-align: center;
@@ -394,5 +441,14 @@ footer{
    .column_container{
     flex-direction:column;
    }
+
   }
 
+  /* @media (max-width: 400px){
+    
+    .gridtest{
+   
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+
+    }
+  } */
