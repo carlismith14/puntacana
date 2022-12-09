@@ -222,6 +222,7 @@ nav :focus{
 .foodsection{
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 2em;
 }
 
@@ -326,7 +327,9 @@ flex: 1;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 1em;
+    /* background: black; */
 }
+
 
 
 
@@ -334,23 +337,47 @@ flex: 1;
     display: flex;
     justify-content: space-between;
     text-align: right;
+    font-weight: bold;
 }
 
 .map{
     margin: 0;
 }
 
-.hours{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
+.visit{
+    align-self: center;
+    color: red;
+    font-family: 'Alex Brush', cursive;
+    font-size: 4rem;
 }
+
+
 .hourheader{
     align-self: center;
     text-transform: uppercase;
     font-weight: 600;
     padding-bottom: 1em;
+}
+
+.hours{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background: red; */
+    /* flex: 1; */
+    padding: 0 1em;
+    /* max-height: 450px; */
+}
+
+
+
+.address{
+    align-self: center;
+    font-weight: bold;
+    color: red;
+    font-size: 1rem;
+    padding-top: 1em;
+    text-align: center;
 }
 
 /*contact section*/
@@ -418,8 +445,15 @@ footer{
     width: 90px;
 }
 
-@media (max-width: 800px) {
+
+
+
+/* media queries  */
+
+@media (max-width: 830px) {
     
+
+
     .gridtest{
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 
