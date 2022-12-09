@@ -149,7 +149,9 @@ nav :focus{
 }
 
 .hero_img{
-    background: url("/images/resized-image-Promo.jpeg");
+    /* background: url("/images/resized-image-Promo.jpeg"); */
+    background: url("https://i0.wp.com/chicagoreader.com/wp-content/uploads/2021/08/morenas-2724.jpg?w=1200&ssl=1");
+    
     height: 70vh;
     /* width: 50vw; */
     background-repeat:repeat;
@@ -207,13 +209,20 @@ nav :focus{
 .gridtest{
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    /* grid-template-rows: repeat(3,minmax(1fr, 00px)); */
+}
+
+.dish{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .7rem;
 }
 
 .foodsection{
     display: flex;
     justify-content: space-between;
+    gap: 2em;
 }
 
 .meat{
@@ -221,18 +230,25 @@ nav :focus{
 }
 
 .menuimg{
-    width: 150px;
-    object-fit:cover;
+    width: 10%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+.foodsection{
+    border: 2px dashed black;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1em;
 }
 
 .food{
     flex: 1;
 }
 
-.foodcategory{
 
-    border: 1px solid red;
-}
 
 .foodcategory1{
     text-align: center;
@@ -284,7 +300,7 @@ flex: 1;
 .menu_item-descrip{
     font-style: italic;
     font-weight: normal;
-    f
+    text-transform: lowercase;
 }
 
 .price{
@@ -404,6 +420,10 @@ footer{
 
 @media (max-width: 800px) {
     
+    .gridtest{
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    }
 
     .nav-toggle {
         display: inline;
@@ -444,11 +464,17 @@ footer{
 
   }
 
-  /* @media (max-width: 400px){
+  @media (max-width: 400px){
     
+
+
+    .meat{
+        grid-column: span 1;
+    }
+
     .gridtest{
    
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 
     }
-  } */
+  }
