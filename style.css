@@ -1,9 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,100&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
 
+:root{
+  --bold-font:'Francois One', sans-serif;
+}
 
 
 * {
@@ -17,7 +24,16 @@ html {
 }
 
 body {
+  
+}
+
+body{
   font-family: "Montserrat", sans-serif;
+ 
+  /* opacity: .3; */
+  background: url("https://img.freepik.com/free-vector/engraving-hand-drawn-tropical-leaves-background_23-2148961423.jpg?w=1380&t=st=1670957793~exp=1670958393~hmac=51b53c838c6bf53083cfd63fb29289a31a93e1668ea8003e88efb15b0fc1100b");
+  background-attachment: fixed;
+
 }
 
 img {
@@ -122,7 +138,8 @@ nav a {
   text-transform: uppercase;
   font-weight: bolder;
   color: black;
-  font-size: 0.75em;
+  font-size: 1em;
+  font-family: var(--bold-font);
 }
 
 nav :hover {
@@ -166,6 +183,9 @@ nav :focus {
 }
 
 
+
+
+
 .hero_logo_container{
   margin: 0 auto;
   background: white;
@@ -175,6 +195,10 @@ nav :focus {
   /* opacity: .8; */
   position: relative;
   z-index: 1;
+  font-family: var(--bold-font);
+  
+  text-transform: uppercase;
+  
 }
 
 .tracking-in-expand {
@@ -233,7 +257,9 @@ nav :focus {
   flex-basis: 50%;
   /* flex-grow: 1; */
   font-size: 2rem;
-  text-align:
+  background: white;
+  padding: 2em;
+  font-family: var(--bold-font);
 }
 
 .about_img {
@@ -288,6 +314,7 @@ nav :focus {
   border-radius: 10px;
   overflow: hidden;
   padding: 1em;
+  background: white;
 }
 
 .foodsection:hover {
@@ -319,15 +346,23 @@ nav :focus {
 
 .foodcategory1 {
   text-align: center;
+  font-family: var(--bold-font);
+  font-size: 1.75em;
+
 }
 
 .foodlist {
   display: flex;
   justify-content: space-between;
+
 }
 
 /*catering section*/
 
+.menu_content{
+  background: white;
+  padding: 2em;
+}
 
 .menu_section {
   width: 90%;
@@ -340,13 +375,24 @@ nav :focus {
 .menu_intro_title {
   text-align: center;
   color: red;
+  font-family: var(--bold-font);
+
 }
 
 .menu_intro_message {
   text-align: center;
   font-style: italic;
+  font-family: var(--bold-font);
+  font-size: 2rem;
+  
+
 }
 
+.catering_note{
+  text-align: center;
+  font-style: italic;
+  font-weight:bolder;
+}
 
 .column_container {
   justify-content: space-around;
@@ -372,6 +418,7 @@ nav :focus {
 .menu_item-title {
   text-transform: uppercase;
   font-size: 0.7rem;
+  
 }
 
 .menu_item-descrip {
@@ -413,9 +460,9 @@ nav :focus {
 
 .visit {
   align-self: center;
-  color: red;
-  font-family: "Alex Brush", cursive;
-  font-size: 4rem;
+  color: black;
+  font-family: var(--bold-font);
+  font-size: 3rem;
 }
 
 .hourheader {
@@ -567,6 +614,8 @@ footer {
   cursor: pointer;
   padding: 15px;
   border-radius: 4px;
+  font-family: var(--bold-font);
+
 }
 
 #myBtn:hover {
@@ -613,6 +662,8 @@ footer {
 
   .contact_container {
     flex-direction: column;
+    gap: 2em;
+
   }
 
   .column_container {
