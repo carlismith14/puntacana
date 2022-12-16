@@ -168,14 +168,13 @@ nav :focus {
 
 
 .hero_img {
-  /* background: url("/images/resized-image-Promo.jpeg"); */
-  background: url("./images/backgroundimg.jpg");
-  /* opacity: .4; */
+  
+  background: url("./images/backgroundimg.png");
   height: 100vh;
   /* width: 50vw; */
   background-repeat: repeat;
   background-size: cover;
-  background-attachment: fixed;
+
   background-position: 50% 60%;
   margin-bottom: 3em;
   display: grid;
@@ -654,8 +653,8 @@ footer {
 
 
   .hero_logo_container{
-    /* color: red; */
-    font-size: .7rem;
+ 
+    font-size: .6rem;
   }
 
   .foodsection {
@@ -733,10 +732,4 @@ footer {
   }
 }
 
-@media (max-width: 400px) {
-  /* .gridtest{
-   
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 
-    } */
-}
