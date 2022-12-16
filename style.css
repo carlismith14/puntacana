@@ -33,9 +33,10 @@ body{
   /* opacity: .3; */
   background: url("./images/bodyimg.png");
   background-attachment: fixed;
-  background-repeat:repeat-x;
+  background-repeat:repeat;
+  background-position: right;
 
-  /* background-size: cover; */
+  /* background-size: contain; */
 
 }
 
