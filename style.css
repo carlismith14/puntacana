@@ -33,7 +33,7 @@ body{
   /* opacity: .3; */
   background: url("https://img.freepik.com/free-vector/engraving-hand-drawn-tropical-leaves-background_23-2148961423.jpg?w=1380&t=st=1670957793~exp=1670958393~hmac=51b53c838c6bf53083cfd63fb29289a31a93e1668ea8003e88efb15b0fc1100b");
   background-attachment: fixed;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
 
 }
