@@ -171,6 +171,7 @@ nav :focus {
   
   background: url("./images/backgroundimg.png");
   height: 100vh;
+  /* margin-top:em ; */
   /* width: 50vw; */
   background-repeat: repeat;
   background-size: cover;
@@ -310,7 +311,7 @@ nav :focus {
 .foodsection {
   display: flex;
   /* flex-wrap: wrap; */
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 1em;
   border: 2px dashed black;
@@ -343,7 +344,8 @@ nav :focus {
 }
 
 .foodcategory{
-  /* flex-basis: 40%; */
+  flex-basis: 50%;
+
 }
 
 .fishimg {
@@ -364,6 +366,7 @@ nav :focus {
 .foodlist {
   display: flex;
   justify-content: space-between;
+ 
 
 }
 
