@@ -34,7 +34,7 @@ body{
   background: url("./images/bodyimg.png");
   background-attachment: fixed;
   background-repeat:repeat;
-  background-position: right;
+  background-position: left;
 
   /* background-size: contain; */
 
