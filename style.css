@@ -1,42 +1,35 @@
 @import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,800;1,100&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
 
 :root{
   --bold-font:'Francois One', sans-serif;
+  --color-red: red;
+  --cursive-font:"Alex Brush", cursive;
 }
 
 
 * {
   box-sizing: border-box;
   margin: 0;
-  /* overflow: hidden; */
+
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  
-}
+
 
 body{
   font-family: "Montserrat", sans-serif;
  
-  /* opacity: .3; */
+
   background: url("./images/bodyimg.png");
   background-attachment: fixed;
   background-repeat:repeat;
   background-position: right;
-
-  /* background-size: contain; */
 
 }
 
@@ -49,17 +42,15 @@ img {
   padding-top: 0.5em;
   margin-bottom: 0.5em;
   font-size: 5em;
-  color: red;
+  color: var(--color-red);
   text-align: center;
-  font-family: "Alex Brush", cursive;
+  font-family: var(--cursive-font); 
   font-weight: normal;
-
   display: block;
 }
 
 section {
   margin-bottom: 7em;
-  /* height: 100vh; */
   scroll-margin-top: 12.5vh;
 }
 
@@ -67,40 +58,20 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bolder;
-  /* font-size: xx-large; */
+
 }
 
 li {
   list-style: none;
-  /* background: orange; */
   padding: 0.5em 1em;
 }
 
 /*top bar*/
-.head_container {
-  display: flex;
-  justify-content: flex-end;
-  background-color: black;
-  color: white;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  font-size: 0.85rem;
-  gap: 2em;
-  padding-right: 1em;
-}
-
-.head_menu {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.75em;
-}
-
-/*navbar*/
 
 header {
   position: sticky;
   width: 100%;
-  background-color: #fb1111;
+  background-color:var(--color-red);
   top: 0;
   left: 0;
   display: flex;
@@ -113,27 +84,24 @@ header {
 .logo {
   width: 300px;
   padding-bottom: 1em;
-  /* transform: scale(2); */
-  transition: transform(scale) 1s ease-in;
 }
+
+
+/*navbar*/
 
 .container {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
 }
 
 nav {
   display: flex;
   font-size: large;
-  /* gap:1em; */
-
 }
 
 nav li {
   list-style: none;
-  /* background: orange; */
   padding: 0.5em 1em;
 }
 
@@ -154,10 +122,7 @@ nav :focus {
   color: orange;
 }
 
-.container2 {
-  display: flex;
-  gap: 50px;
-}
+
 
 .nav-toggle {
   display: none;
@@ -167,19 +132,11 @@ nav :focus {
 /* hero section */
 
 
-
-
-
-
 .hero_img {
-  
   background: url("./images/backgroundimg.png");
   height: 100vh;
-  /* margin-top:em ; */
-  /* width: 50vw; */
-  background-repeat: repeat;
+  background-repeat:no-repeat;
   background-size: cover;
-
   background-position: 50% 60%;
   margin-bottom: 3em;
   display: grid;
@@ -194,15 +151,10 @@ nav :focus {
   margin: 0 auto;
   background: white;
   padding: 1em 3em;
-  /* display: grid; */
-  /* place-items: center;   */
-  /* opacity: .8; */
   position: relative;
-  z-index: 1;
+  /* z-index: 1; */
   font-family: var(--bold-font);
-  
   text-transform: uppercase;
-  
 }
 
 .tracking-in-expand {
@@ -211,11 +163,7 @@ nav :focus {
 }
 
 
-/**
- * ----------------------------------------
- * animation tracking-in-expand
- * ----------------------------------------
- */
+
  @-webkit-keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
@@ -278,18 +226,7 @@ nav :focus {
   box-shadow: 10px 10px 2px 0 rgba(27, 20, 20, 0.05);
 }
 
-#typedtext {
-  display: grid;
 
-  /* position: fixed; */
-  padding-top: 0.7em;
-  place-items: center;
-  text-align: center;
-  font-family: "Alex Brush", cursive;
-  font-weight: normal;
-  font-size: 12em;
-  color: white;
-}
 
 /*main menu section*/
 
@@ -303,18 +240,12 @@ nav :focus {
   gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   grid-auto-rows: min-content;
-  /* grid-template-rows: repeat(auto-fill); */
 }
 
-.dish {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 0.7rem;
-}
+
 
 .foodsection {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
   align-items: flex-start;
   gap: 1em;
@@ -325,22 +256,15 @@ nav :focus {
   background: white;
 }
 
+
+
 .foodsection:hover {
-  /* background: black; */
   border: 2px dashed red;
-
-  /* color: white; */
 }
 
-.meat {
-  /* grid-column: span 2; */
-}
 
 .menuimg {
-  /* width: 200px; */
   width: 50%;
-  /* flex-basis: calc(50% - 3em); */
-  /* flex-grow: 1; */
   object-fit: cover;
   object-position: center;
   min-height: fit-content;
@@ -352,13 +276,6 @@ nav :focus {
 
 }
 
-.fishimg {
-  object-position: left center;
-}
-
-/* .food {
-  flex: 1;
-} */
 
 .foodcategory1 {
   text-align: center;
@@ -374,6 +291,17 @@ nav :focus {
 
 }
 
+.dish {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+
+.fishimg {
+  object-position: left center;
+}
+
 /*catering section*/
 
 .menu_content{
@@ -381,20 +309,15 @@ nav :focus {
   padding: 2em;
 }
 
-.menu_section {
+.cateringmenu_section {
   width: 90%;
   margin: 0 auto;
-  /* text-align: center; */
+
 }
 
 
 /* menu "header" */
-.menu_intro_title {
-  text-align: center;
-  color: red;
-  font-family: var(--bold-font);
 
-}
 
 .menu_intro_message {
   text-align: center;
@@ -452,27 +375,19 @@ nav :focus {
 
 
 
-
-
-
 /*hours+location*/
 .hourslocal {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 1em;
-  /* background: black; */
 }
 
-.day {
+.hours {
   display: flex;
-  justify-content: space-between;
-  text-align: right;
-  font-weight: bold;
-}
-
-.map {
-  margin: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1em;
 }
 
 .visit {
@@ -486,17 +401,14 @@ nav :focus {
   align-self: center;
   text-transform: uppercase;
   font-weight: 600;
-  padding-bottom: 1em;
+  padding-bottom: m;
 }
 
-.hours {
+.day {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* background: red; */
-  /* flex: 1; */
-  padding: 0 1em;
-  /* max-height: 450px; */
+  justify-content: space-between;
+  text-align: right;
+  font-weight: bold;
 }
 
 .address {
@@ -513,35 +425,19 @@ nav :focus {
 
 .contactUs {
   width: 100%;
-  min-height: 60vh;
-  /* margin-bottom:20rem; */
+  min-height: 45vh; 
 
- 
-
-}
-
-.contactUs h3 {
-  text-align: center;
 }
 
 .contact_container {
   display: flex;
-  /* flex-wrap: wrap; */
   text-align: center;
   justify-content: space-between;
   align-items: flex-start;
   padding: 4em;
-  gap: 2em;
   width: 70%;
   margin: auto;
   background: white;
-
-
-  /* background: url("/images/IMG_0499.png"); */
-  /* background-repeat: no-repeat;
-    background-size: cover;
-    background-position:; */
-  /* height: 50vh; */
 }
 
 .contact {
@@ -554,48 +450,12 @@ nav :focus {
   font-size: 1.25em;
 }
 
+
 /*footer section*/
 footer {
   background: black;
   color: white;
-  /* margin-top: 2em; */
   position: static;
-}
-
-.footercol {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.footer_h2 {
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  color: red;
-  font-family: var(--bold-font);
-}
-
-.footercol {
-  text-transform: uppercase;
-  
-
-  flex: 1;
-}
-.footercol p {
-  color: white;
-  font-weight: 500;
-}
-
-.contacticons {
-  margin-top: 2em;
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  font-size: small;
-}
-
-.followus {
-  margin-bottom: 2.75em;
 }
 
 .footer_container {
@@ -608,15 +468,46 @@ footer {
   gap: 2em;
 }
 
+.footercol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-transform: uppercase;
+  flex: 1;
+}
+
+.footer_h2 {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: red;
+  font-family: var(--bold-font);
+}
+
+
+.footercol p {
+  color: white;
+  font-weight: 500;
+}
+
+.contacticons {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  font-size: larger;
+}
+
+.followus {
+  margin-bottom: 2.75em;
+}
+
+
 .grubhub {
   margin-top: 1em;
   width: 90px;
   align-self: center;
 }
 
-.fa-solid {
-  margin-left: ;
-}
 
 /* copyright banner */
 .copyright {
@@ -658,10 +549,52 @@ footer {
 
 @media (max-width: 830px) {
 
+  /* navbar  */
+
+  .nav-toggle {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.75rem;
+
+    color: white;
+    transition: opacity 250ms ease;
+    position: absolute;
+    right: 1.5rem;
+  }
+
+
+  .navvb {
+    display: none;
+    position: fixed;
+    top: 5.6em;
+    left: 0;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: var(--color-red);
+  }
+
+  .active {
+    display: block;
+  }
+
+
+  /* about section  */
+
+  .about_text{
+    font-size: 1em;
+  }
 
   .hero_logo_container{
  
     font-size: .6rem;
+  }
+
+/* main menu  */
+
+  .gridtest {
+    grid-template-columns: 1fr;
   }
 
   .foodsection {
@@ -675,62 +608,27 @@ footer {
 
   
 
-
-
-
-  /* .foodsection{
-    flex-direction: column;
-  } */
-
-  .about_text{
-    font-size: 1em;
+  /* catering section */
+  .menu_item:last-child{
+   margin-bottom: 0;
   }
 
-
-  .gridtest {
-    grid-template-columns: 1fr;
-  }
-
-  .nav-toggle {
-    display: inline-block;
-    cursor: pointer;
-    font-size: 1.75rem;
-
-    color: white;
-    transition: opacity 250ms ease;
-    position: absolute;
-    right: 1.5rem;
-  }
-
-  .navbarc {
-    width: 100%;
-  }
-
-  .navvb {
-    display: none;
-    position: fixed;
-    top: 5.6em;
-    left: 0;
-    text-align: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background: red;
-  }
-
-  .active {
-    display: block;
-  }
-
-  .contact_container {
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;
-
-  }
 
   .column_container {
     flex-direction: column;
+  }
+
+
+  /* contact section */
+  .contact_container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0em;
+
+  }
+
+  .contact {
+    margin-top: 2em;
   }
 
   .footer_container {
