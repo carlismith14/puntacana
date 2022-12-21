@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Punta Cana | Dominican Grill</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./images/pc2.png">
     <script src="https://kit.fontawesome.com/444abf843d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,26 +19,20 @@
 
     
     <!-- navbar section -->
-    <header>
-        <img class="logo" src="./images/pc.png" alt="">
-    
-        <!-- <div class="container"> -->
-    
-    
-            <nav class="navvb">
-    
-                    <li class="nav_li"><a href="#about">About</a></li>
-                    <li class="nav_li"><a class="" href="#menu">Menu</li></a>
-                    <li class="nav_li"><a class="" href="#catering">Catering</li></a>
-                    <li class="nav_li"><a class="" href="#hours">Hours</li></a>
-                    <li class="nav_li"><a class="" href="#contact">Contact</li></a>
-            </nav>
-            <div class="nav-toggle">
-            <i class="fas fa-bars"></i>
-            </div>
-<!--     
-        </div> -->
-    </header>
+<header>
+    <img class="header__logo" src="./images/pc.png" alt="">
+    <nav class="nav">
+
+        <li class="nav__li"><a class="nav__a"href="#about">About</a></li>
+        <li class="nav__li"><a class="nav__a" href="#menu">Menu</li></a>
+        <li class="nav__li"><a class="nav__a" href="#catering">Catering</li></a>
+        <li class="nav__li"><a class="nav__a" href="#hours">Hours & Location</li></a>
+        <li class="nav__li"><a class="nav__a" href="#contact">Contact</li></a>
+    </nav>
+    <div class="header__nav-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+</header>
     
     
     <div class="hero_img ">
@@ -52,338 +46,337 @@
     
     
     <!-- about section -->
-    <section id ="about" class="about_section">    
-            <h1 class="section_header">About Us</h1>
-            <div class="about_content">
-                <div class="about_text">
-    
+    <section id ="about" class="about">    
+            <h1 class="section_header about__header">About Us</h1>
+            <div class="about__container">
+                <div class="about__text">
                         <p>
                             Punta Cana is a family-owned Dominican restaurant located in Beverly, Massachusetts.
                             <br><br>
-                            We pride ourselves on offering authentic Dominican cuisine in a warm and welcoming atmosphere. Our menu features a variety of traditional dishes, including tasty mofongo, succulent roast pork, and fresh seafood. We also have a full bar stocked with tropical cocktails. 
+                            We pride ourselves on offering authentic Dominican cuisine in a warm and welcoming atmosphere. Our menu features a variety of traditional menu__dishes, including tasty mofongo, succulent roast pork, and fresh seafood. We also have a full bar stocked with tropical cocktails. 
                             <br><br>
-                            Come visit us and experience the flavors of the Dominican Republic right here in Beverly.</p>
+                            Come visit us and experience the flavors of the Dominican Republic right here in Beverly.
+                        </p>
                 </div>
-                <img class="about_img imgBorder" src="./images/Punta-Cana (2).jpg" alt="" width="500">
-    
+                <img class="about__img imgBorder" src="./images/Punta-Cana (2).jpg" alt="" width="500">
     </section>
     
     
     
     <!-- main menu -->
-    <section id ="menu" class="main_menu_section">
-        <h1 class="section_header">Main Menu</h1>
-        <div class="gridtest">
+    <section id ="menu" class="menu">
+        <h1 class=" section_header menu__header">Main Menu</h1>
+        <div class="grid">
             <!-- grid item 1 -->
-            <div class="foodsection">
-                <img class="food menuimg" src="https://belquistwist.com/wp-content/uploads/2019/09/dominican-white-rice-500x427.jpg" alt="" width="200px">
-                <div class="food foodcategory">
-                    <h1 class="foodcategory1">Rice</h1>
-                    <div class="foodlist">
-                        <div class="dish">White Rice</div>
-                        <div class="price">$10</div>
+            <div class="grid__item grid__item--rice">
+                <img class="menu__img menu__img--rice" src="https://belquistwist.com/wp-content/uploads/2019/09/dominican-white-rice-500x427.jpg" alt="" width="200px">
+                <div class="menu__text">
+                    <h1 class="menu__title">Rice</h1>
+                    <div class="menu__item">
+                        <div class="menu__dish">White Rice</div>
+                        <div class="menu__menu__price">$10</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Yellow Rice</div>
-                        <div class="price">$10</div>
+                    <div class="menu__item">
+                        <div class="menu__dish">Yellow Rice</div>
+                        <div class="menu__price">$10</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Special Rice</div>
-                        <div class="price">$10</div>
+                    <div class="">
+                        <div class="">Special Rice</div>
+                        <div class="menu__price">$10</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Mangu</div>
-                        <div class="price">$8</div>
+                    <div class="menu__item">
+                        <div class="menu__dish">Mangu</div>
+                        <div class="menu__price">$8</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Boiled Yuca</div>
-                        <div class="price">$7</div>
+                    <div class="menu__item">
+                        <div class="menu__dish">Boiled Yuca</div>
+                        <div class="menu__price">$7</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Spaghetti</div>
-                        <div class="price">$8</div>
+                    <div class="menu__item">
+                        <div class="menu__dish">Spaghetti</div>
+                        <div class="menu__price">$8</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Boiled platano maduro</div>
-                        <div class="price">$5+</div>
+                    <div class="menu__item">
+                        <div class="menu__dish">Boiled platano maduro</div>
+                        <div class="menu__price">$5+</div>
                     </div>
                 </div>
             </div>
             <!-- grid item 2 -->
-            <div class="foodsection">
-                <img class="food menuimg" src="https://i0.wp.com/breakthrukitchen.com/wp-content/uploads/2020/09/img_4827.jpg?fit=2806%2C2806&ssl=1" alt="">
-                <div class="food foodcategory">
-                    <h1 class="foodcategory1">Beans</h1>
-                    <div class="foodlist">
-                        <div class="dish">Red Beans</div>
-                        <div class="price">$3/$5/$7</div>
+            <div class="grid__item grid__item--beans">
+                <img class="menu__img" src="https://i0.wp.com/breakthrukitchen.com/wp-content/uploads/2020/09/img_4827.jpg?fit=2806%2C2806&ssl=1" alt="">
+                <div class="menu__text">
+                    <h1 class="menu__title">Beans</h1>
+                    <div class="menu__item">
+                        <div class="menu__dish">Red Beans</div>
+                        <div class="menu__price">$3/$5/$7</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Black Beans</div>
-                        <div class="price">$3/$5/$7</div>
+                    <div class="menu__item">
+                        <div class="menu__dish">Black Beans</div>
+                        <div class="menu__price">$3/$5/$7</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Specialty Beans</div>
-                        <div class="price">$3</div>
+                    <div class="menu__item">
+                        <div class="menu__dish">Specialty Beans</div>
+                        <div class="menu__price">$3</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">White Rice</div>
-                        <div class="price">$10</div>
+                    <div class="menu__item">
+                        <div class="menu__dish">White Rice</div>
+                        <div class="menu__price">$10</div>
                     </div>
                 </div>
             </div>
             <!-- grid item 3 MEAT-->
-        <div class="foodsection meat">
-            <img class="food menuimg" src="https://www.budgetbytes.com/wp-content/uploads/2022/10/Puerto-Rican-Chicken-Stew-side-500x500.jpg" alt="">
-            <div class="food foodcategory">
-                <h1 class="foodcategory1">Meats</h1>
-                <div class="foodlist">
-                    <div class="dish">Pollo Horniado
+        <div class="grid__item meat">
+            <img class="menu__img" src="https://www.budgetbytes.com/wp-content/uploads/2022/10/Puerto-Rican-Chicken-Stew-side-500x500.jpg" alt="">
+            <div class="menu__text">
+                <h1 class="menu__title">Meats</h1>
+                <div class="menu__item">
+                    <div class="menu__dish">Pollo Horniado
                         <p class="menu_item-descrip">1 piece. Baked chicken thigh.</p>
                     </div>
-                    <div class="price">$5</div>
+                    <div class="menu__price">$5</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Pollo Guisado
+                <div class="menu__item">
+                    <div class="menu__dish">Pollo Guisado
                         <p class="menu_item-descrip">Braised chicken</p>
                     </div>
-                    <div class="price">$16</div>
+                    <div class="menu__price">$16</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Cerdo Guisado
+                <div class="menu__item">
+                    <div class="menu__dish">Cerdo Guisado
                         <p class="menu_item-descrip">Braised pork</p>
                     </div>
-                    <div class="price">$10</div>
+                    <div class="menu__price">$10</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Bistec Guisado
+                <div class="menu__item">
+                    <div class="menu__dish">Bistec Guisado
                         <p class="menu_item-descrip">braised steak</p>
                     </div>
-                    <div class="price">$16</div>
+                    <div class="menu__price">$16</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Bistec Enecebollado
+                <div class="menu__item">
+                    <div class="menu__dish">Bistec Enecebollado
                         <p class="menu_item-descrip">onion steak</p>
                     </div>
-                    <div class="price">$16</div>
+                    <div class="menu__price">$16</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Chicharon de Cerdo
+                <div class="menu__item">
+                    <div class="menu__dish">Chicharon de Cerdo
                         <p class="menu_item-descrip">1lb fried pork belly</p>
                     </div>
-                    <div class="price">$18</div>
+                    <div class="menu__price">$18</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Pernil
+                <div class="menu__item">
+                    <div class="menu__dish">Pernil
                         <p class="menu_item-descrip">1lb roasted pork shoulder</p>
                     </div>
-                    <div class="price">$16</div>
+                    <div class="menu__price">$16</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Chicharon de pollo
+                <div class="menu__item">
+                    <div class="menu__dish">Chicharon de pollo
                         <p class="menu_item-descrip">1lb fried chicken</p>
                     </div>
-                    <div class="price">$18</div>
+                    <div class="menu__price">$18</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Pollo a la plancha
+                <div class="menu__item">
+                    <div class="menu__dish">Pollo a la plancha
                     </div>
-                    <div class="price">$16</div>
+                    <div class="menu__price">$16</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Carne frita
+                <div class="menu__item">
+                    <div class="menu__dish">Carne frita
                     </div>
-                    <div class="price">$18</div>
+                    <div class="menu__price">$18</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Pollo al ajillo
+                <div class="menu__item">
+                    <div class="menu__dish">Pollo al ajillo
                         <p class="menu_item-descrip">chicken topped with garlic sauce</p>
                     </div>
-                    <div class="price">$18</div>
+                    <div class="menu__price">$18</div>
                 </div>
             </div>
         </div>
     
             <!-- Fish -->
-            <div class="foodsection">
-                <img class="food menuimg fishimg" src="https://belquistwist.com/wp-content/uploads/2020/04/dominican-fried-red-snapper-e1586725830798.jpg" alt="">
-                <div class="food foodcategory">
-                    <h1 class="foodcategory1">Fish</h1>
-                    <div class="foodlist">
-                        <div class="dish">Red Snapper
+            <div class="grid__item">
+                <img class="menu__img menu__img--fish" src="https://belquistwist.com/wp-content/uploads/2020/04/dominican-fried-red-snapper-e1586725830798.jpg" alt="">
+                <div class="menu__text">
+                    <h1 class="menu__title">Fish</h1>
+                    <div class="menu__item">
+                        <div class="menu__dish">Red Snapper
                             <p class="menu_item-descrip"> 1lb with sides</p>
                         </div>
-                        <div class="price">$30</div>
+                        <div class="menu__price">$30</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Bacalao
+                    <div class="menu__item">
+                        <div class="menu__dish">Bacalao
                             <p class="menu_item-descrip">Salted dried cod</p>
                         </div>
-                        <div class="price">$10</div>
+                        <div class="menu__price">$10</div>
                     </div>
                 </div>
             </div>
     
     
             <!-- grid item 4 SAVORY FOOD-->
-        <div class="foodsection">
-            <img class="menuimg" src="https://sweetsimplevegan.com/wp-content/uploads/2021/09/pla%CC%81tanos-Maduros-white-plate-Sweet-Simple-Vegan-3-1.jpg" alt="">
-            <div class="foodcategory">
-                <h1 class="foodcategory1">Savory Food</h1>
-                <div class="foodlist">
-                    <div class="dish">Bala de Papa
+        <div class="grid__item">
+            <img class="menu__img" src="https://sweetsimplevegan.com/wp-content/uploads/2021/09/pla%CC%81tanos-Maduros-white-plate-Sweet-Simple-Vegan-3-1.jpg" alt="">
+            <div class="menu__text">
+                <h1 class="menu__title">Savory Food</h1>
+                <div class="menu__item">
+                    <div class="menu__dish">Bala de Papa
                         <p class="menu_item-descrip">chicken topped with garlic sauce</p>
                     </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Frito Maduro
+                <div class="menu__item">
+                    <div class="menu__dish">Frito Maduro
                         <p class="menu_item-descrip">fried sweet plantains</p>
                     </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Tostones
+                <div class="menu__item">
+                    <div class="menu__dish">Tostones
                         <p class="menu_item-descrip">fried green plantains</p>
                     </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">French Fries
+                <div class="menu__item">
+                    <div class="menu__dish">French Fries
                     </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Yuca Fries
+                <div class="menu__item">
+                    <div class="menu__dish">Yuca Fries
                     </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Domini Spaghetti
+                <div class="menu__item">
+                    <div class="menu__dish">Domini Spaghetti
                     </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Potato Salad
+                <div class="menu__item">
+                    <div class="menu__dish">Potato Salad
                     </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Yuca boiled
+                <div class="menu__item">
+                    <div class="menu__dish">Yuca boiled
                     </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Guineo
+                <div class="menu__item">
+                    <div class="menu__dish">Guineo
                     </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Queso Frito
+                <div class="menu__item">
+                    <div class="menu__dish">Queso Frito
                         <p class="menu_item-descrip">fried cheese</p>
                     </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Sarchichon
+                <div class="menu__item">
+                    <div class="menu__dish">Sarchichon
                     </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                 </div>
             </div>
         </div>
     
             <!-- grid item 5 mofongo -->
-        <div class="foodsection">
-            <img class="food menuimg" src="./images/Screenshot 2022-12-11 at 5.08.05 PM.png" alt="">
+        <div class="grid__item">
+            <img class="menu__img" src="./images/Screenshot 2022-12-11 at 5.08.05 PM.png" alt="">
     
-            <div class="food foodcategory">
-                <h1 class="foodcategory1">Mofongo</h1>
-                <div class="foodlist">
-                    <div class="dish">Mofongo de Chicharon de Cerdo
+            <div class="menu__text">
+                <h1 class="menu__title">Mofongo</h1>
+                <div class="menu__item">
+                    <div class="menu__dish">Mofongo de Chicharon de Cerdo
                         <p class="menu_item-descrip">fried pork belly</p>
                     </div>
-                    <div class="price">$22</div>
+                    <div class="menu__price">$22</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Mofongo de Camarones
+                <div class="menu__item">
+                    <div class="menu__dish">Mofongo de Camarones
                         <p class="menu_item-descrip">garlic shrimp or guisado</p>
                     </div>
-                    <div class="price">$25</div>
+                    <div class="menu__price">$25</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Mofongo de Pollo
+                <div class="menu__item">
+                    <div class="menu__dish">Mofongo de Pollo
                         <p class="menu_item-descrip">choice of chicken</p>
                     </div>
-                    <div class="price">$20+</div>
+                    <div class="menu__price">$20+</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Mofongo de Pollo
+                <div class="menu__item">
+                    <div class="menu__dish">Mofongo de Pollo
                         <p class="menu_item-descrip">choice of chicken</p>
                     </div>
-                    <div class="price">$20+</div>
+                    <div class="menu__price">$20+</div>
                 </div>
             </div>
         </div>
     
             <!-- grid item 5 Pastelitos -->
-        <div class="foodsection">
-            <img class="food menuimg" src="https://www.196flavors.com/wp-content/uploads/2021/06/pastelitos-venezolanos-4fp-500x375.jpg" alt="">
-            <div class="food foodcategory">
-                <h1 class="foodcategory1">Pastelitos</h1>
-                <div class="foodlist">
-                    <div class="dish">Jamon y Queso Pastelito
+        <div class="grid__item">
+            <img class="menu__img" src="https://www.196flavors.com/wp-content/uploads/2021/06/pastelitos-venezolanos-4fp-500x375.jpg" alt="">
+            <div class="menu__text">
+                <h1 class="menu__title">Pastelitos</h1>
+                <div class="menu__item">
+                    <div class="menu__dish">Jamon y Queso Pastelito
                         <p class="menu_item-descrip">ham and cheese</p>
                     </div>
-                    <div class="price">$4</div>
+                    <div class="menu__price">$4</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Pollo Pastelito
+                <div class="menu__item">
+                    <div class="menu__dish">Pollo Pastelito
                         <p class="menu_item-descrip">chicken</p>
                     </div>
-                    <div class="price">$3</div>
+                    <div class="menu__price">$3</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Carne Pastelito
+                <div class="menu__item">
+                    <div class="menu__dish">Carne Pastelito
                         <p class="menu_item-descrip">beef</p>
                     </div>
-                    <div class="price">$3</div>
+                    <div class="menu__price">$3</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Bistec y Queso Pastelito
+                <div class="menu__item">
+                    <div class="menu__dish">Bistec y Queso Pastelito
                         <p class="menu_item-descrip">steak and cheese</p>
                     </div>
-                    <div class="price">$4</div>
+                    <div class="menu__price">$4</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Pollo con queso
+                <div class="menu__item">
+                    <div class="menu__dish">Pollo con queso
                     </div>
-                    <div class="price">$4</div>
+                    <div class="menu__price">$4</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Cheese
+                <div class="menu__item">
+                    <div class="menu__dish">Cheese
                     </div>
-                    <div class="price">$3</div>
+                    <div class="menu__price">$3</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Arcapurria
+                <div class="menu__item">
+                    <div class="menu__dish">Arcapurria
                         <p class="menu_item-descrip">green banana, plantains, squash & yautia smashed up with delicious beef in the middle</p>
                     </div>
-                    <div class="price">$5</div>
+                    <div class="menu__price">$5</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Bacon & cheese
+                <div class="menu__item">
+                    <div class="menu__dish">Bacon & cheese
                     </div>
-                    <div class="price">$4</div>
+                    <div class="menu__price">$4</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Pernil & cheese
+                <div class="menu__item">
+                    <div class="menu__dish">Pernil & cheese
                     </div>
-                    <div class="price">$5</div>
+                    <div class="menu__price">$5</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Pernil
+                <div class="menu__item">
+                    <div class="menu__dish">Pernil
                     </div>
-                    <div class="price">$5</div>
+                    <div class="menu__price">$5</div>
                 </div>
             </div>
         </div>
@@ -391,281 +384,281 @@
     
     
     <!-- Soups -->
-        <div class="foodsection">
-            <img class="food menuimg" src="https://foodieandwine.com/wp-content/uploads/2021/12/SANCOCHO_DOMINICANO_4.jpg" alt="">
-            <div class="food foodcategory">
-                <h1 class="foodcategory1">Soups</h1>
-                <div class="foodlist">
-                    <div class="dish">Sancocho Soup
+        <div class="grid__item">
+            <img class="menu__img" src="https://foodieandwine.com/wp-content/uploads/2021/12/SANCOCHO_DOMINICANO_4.jpg" alt="">
+            <div class="menu__text">
+                <h1 class="menu__title">Soups</h1>
+                <div class="menu__item">
+                    <div class="menu__dish">Sancocho Soup
                         <p class="menu_item-descrip">Dominican Stew</p>
                     </div>
-                    <div class="price">$12/$15</div>
+                    <div class="menu__price">$12/$15</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Sopa de Pollo
+                <div class="menu__item">
+                    <div class="menu__dish">Sopa de Pollo
                         <p class="menu_item-descrip">Chicken Soup</p>
                     </div>
-                    <div class="price">$15</div>
+                    <div class="menu__price">$15</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Mondongo
+                <div class="menu__item">
+                    <div class="menu__dish">Mondongo
                         <p class="menu_item-descrip">Tripe stew</p>
                     </div>
-                    <div class="price">$15</div>
+                    <div class="menu__price">$15</div>
                 </div>
             </div>
         </div>
     
         <!-- Picadera -->
-        <div class="foodsection">
-            <img class="food menuimg" src="http://puertoviejony.com/2/wp-content/uploads/2014/12/picadera.jpg" alt="">
-            <div class="food foodcategory">
-                <h1 class="foodcategory1">Picadera</h1>
-                <div class="foodlist">
-                    <div class="dish">Picadera - Family Size
+        <div class="grid__item">
+            <img class="menu__img" src="http://puertoviejony.com/2/wp-content/uploads/2014/12/picadera.jpg" alt="">
+            <div class="menu__text">
+                <h1 class="menu__title">Picadera</h1>
+                <div class="menu__item">
+                    <div class="menu__dish">Picadera - Family Size
                         <p class="menu_item-descrip">Feeds 4 people.
                              Mixed fried foods. Longanisa, chicharron de pollo, salami, yuca fries y queso frito. Dominican sausage, fried chicken, yuca fries, salami, and fried cheese. </p>
                     </div>
-                    <div class="price">$40</div>
+                    <div class="menu__price">$40</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Picadera - for Two
+                <div class="menu__item">
+                    <div class="menu__dish">Picadera - for Two
                         <p class="menu_item-descrip">Feeds 2 people. Mixed fried foods. Longanisa, chicharron de pollo, salami, yuca fries y queso frito. Dominican sausage, fried chicken, yuca fries, salami, and fried cheese. </p>
                     </div>
-                    <div class="price">$30</div>
+                    <div class="menu__price">$30</div>
                 </div>
-                <div class="foodlist">
-                    <div class="dish">Picadera de Pastelitos
+                <div class="menu__item">
+                    <div class="menu__dish">Picadera de Pastelitos
                         <p class="menu_item-descrip">5 pastelitos. ham and cheese, cheese, beef and cheese, beef, chicken, or chicken and cheese</p>
                     </div>
-                    <div class="price">$15</div>
+                    <div class="menu__price">$15</div>
                 </div>
             </div>
         </div>
     
             <!-- Patacon -->
-            <div class="foodsection">
-                <img class="food menuimg" src="https://i0.wp.com/breakthrukitchen.com/wp-content/uploads/2020/06/img_3943.jpg?fit=1114%2C1114&ssl=1" alt="">
-                <div class="food foodcategory">
-                    <h1 class="foodcategory1">Patacon</h1>
-                    <div class="foodlist">
-                        <div class="dish">Patacon de planto maduro
+            <div class="grid__item">
+                <img class="menu__img" src="https://i0.wp.com/breakthrukitchen.com/wp-content/uploads/2020/06/img_3943.jpg?fit=1114%2C1114&ssl=1" alt="">
+                <div class="menu__text">
+                    <h1 class="menu__title">Patacon</h1>
+                    <div class="menu__item">
+                        <div class="menu__dish">Patacon de planto maduro
                             <p class="menu_item-descrip">Platano maduro with meat, lettuce, tomato, onion & cheese </p>
                         </div>
-                        <div class="price">$16</div>
+                        <div class="menu__price">$16</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Patacon de bistec
+                    <div class="menu__item">
+                        <div class="menu__dish">Patacon de bistec
                             <p class="menu_item-descrip">Fried plantain with beef, cheese, lettuce, tomato and our signature sauce </p>
                         </div>
-                        <div class="price">$16</div>
+                        <div class="menu__price">$16</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Patacon de pernil
+                    <div class="menu__item">
+                        <div class="menu__dish">Patacon de pernil
                             <p class="menu_item-descrip">Fried plantain with pork shoulder, cheese, lettuce, tomato & our signature sauce</p>
                         </div>
-                        <div class="price">$16</div>
+                        <div class="menu__price">$16</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Patacon de platano maduro con pernil
+                    <div class="menu__item">
+                        <div class="menu__dish">Patacon de platano maduro con pernil
                             <p class="menu_item-descrip">Sweet plantain, pork shoulder, tomato, lettuce & cheese with our signature sauce</p>
                         </div>
-                        <div class="price">$16</div>
+                        <div class="menu__price">$16</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Cubano
+                    <div class="menu__item">
+                        <div class="menu__dish">Cubano
                         </div>
-                        <div class="price">$16</div>
+                        <div class="menu__price">$16</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Bistec sandwich
+                    <div class="menu__item">
+                        <div class="menu__dish">Bistec sandwich
                         </div>
-                        <div class="price">$16</div>
+                        <div class="menu__price">$16</div>
                     </div>
                 </div>
             </div>
     
             <!-- Combination Plates -->
-            <div class="foodsection">
-                <img class="food menuimg" src="https://nomadparadise.com/wp-content/uploads/2021/05/dominican-food-02-1024x683.jpg.webp" alt="">
-                <div class="food foodcategory">
-                    <h1 class="foodcategory1">Combo plates</h1>
-                    <div class="foodlist">
-                        <div class="dish">Pollo Guisado
+            <div class="grid__item">
+                <img class="menu__img" src="https://nomadparadise.com/wp-content/uploads/2021/05/dominican-food-02-1024x683.jpg.webp" alt="">
+                <div class="menu__text">
+                    <h1 class="menu__title">Combo plates</h1>
+                    <div class="menu__item">
+                        <div class="menu__dish">Pollo Guisado
                         </div>
-                        <div class="price">$17</div>
+                        <div class="menu__price">$17</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Bistec Guisado
+                    <div class="menu__item">
+                        <div class="menu__dish">Bistec Guisado
                         </div>
-                        <div class="price">$17</div>
+                        <div class="menu__price">$17</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Bistec with Peppers
+                    <div class="menu__item">
+                        <div class="menu__dish">Bistec with Peppers
                         </div>
-                        <div class="price">$17</div>
+                        <div class="menu__price">$17</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Credo Guisado
+                    <div class="menu__item">
+                        <div class="menu__dish">Credo Guisado
                         </div>
-                        <div class="price">$17</div>
+                        <div class="menu__price">$17</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Chicharron de pollo
+                    <div class="menu__item">
+                        <div class="menu__dish">Chicharron de pollo
                         </div>
-                        <div class="price">$17</div>
+                        <div class="menu__price">$17</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Pollo a la plancha
+                    <div class="menu__item">
+                        <div class="menu__dish">Pollo a la plancha
                         </div>
-                        <div class="price">$17</div>
+                        <div class="menu__price">$17</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Chicharron de cerdo
+                    <div class="menu__item">
+                        <div class="menu__dish">Chicharron de cerdo
                         </div>
-                        <div class="price">$17</div>
+                        <div class="menu__price">$17</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Pollo horniado
+                    <div class="menu__item">
+                        <div class="menu__dish">Pollo horniado
                         </div>
-                        <div class="price">$17</div>
+                        <div class="menu__price">$17</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Pernil
+                    <div class="menu__item">
+                        <div class="menu__dish">Pernil
                         </div>
-                        <div class="price">$17</div>
+                        <div class="menu__price">$17</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Pollo al ajillo
+                    <div class="menu__item">
+                        <div class="menu__dish">Pollo al ajillo
                         </div>
-                        <div class="price">$17</div>
+                        <div class="menu__price">$17</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Pollo al alfredo
+                    <div class="menu__item">
+                        <div class="menu__dish">Pollo al alfredo
                         </div>
-                        <div class="price">$17</div>
+                        <div class="menu__price">$17</div>
                     </div>
                 </div>
             </div>
     
             <!-- drinks -->
-            <div class="foodsection">
-                <img class="food menuimg drinkimg" src="https://i0.wp.com/www.dominicanabroad.com/wp-content/uploads/2020/01/Morir-Sonando-Dominican.jpg?fit=1020%2C680&ssl=1" alt="">
-                <div class="food foodcategory">
-                    <h1 class="foodcategory1">Drinks</h1>
-                    <div class="foodlist">
-                        <div class="dish">Chinola
+            <div class="grid__item">
+                <img class="menu__img drinkimg" src="https://i0.wp.com/www.dominicanabroad.com/wp-content/uploads/2020/01/Morir-Sonando-Dominican.jpg?fit=1020%2C680&ssl=1" alt="">
+                <div class="menu__text">
+                    <h1 class="menu__title">Drinks</h1>
+                    <div class="menu__item">
+                        <div class="menu__dish">Chinola
                             <p class="menu_item-descrip">Passion fruit</p>
                         </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Morir Sonando
+                    <div class="menu__item">
+                        <div class="menu__dish">Morir Sonando
                             <p class="menu_item-descrip">Creamsicle Orange. contains milk.</p>
                         </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Mango
+                    <div class="menu__item">
+                        <div class="menu__dish">Mango
                         </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Guayava
+                    <div class="menu__item">
+                        <div class="menu__dish">Guayava
                             <p class="menu_item-descrip">guava</p>
                         </div>
-                        <div class="price">$17</div>
+                        <div class="menu__price">$17</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Limonada
+                    <div class="menu__item">
+                        <div class="menu__dish">Limonada
                             <p class="menu_item-descrip">Limeade</p>
                         </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Canned Beverages (assortment)
+                    <div class="menu__item">
+                        <div class="menu__dish">Canned Beverages (assortment)
                         </div>
-                        <div class="price">$4+</div>
+                        <div class="menu__price">$4+</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Bottled Watter
+                    <div class="menu__item">
+                        <div class="menu__dish">Bottled Watter
                         </div>
-                        <div class="price">$2</div>
+                        <div class="menu__price">$2</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Tamarindo juice
+                    <div class="menu__item">
+                        <div class="menu__dish">Tamarindo juice
                         </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Guanabana
+                    <div class="menu__item">
+                        <div class="menu__dish">Guanabana
                         </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Country club red
+                    <div class="menu__item">
+                        <div class="menu__dish">Country club red
                         </div>
-                        <div class="price">$3</div>
+                        <div class="menu__price">$3</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Merengue country club
+                    <div class="menu__item">
+                        <div class="menu__dish">Merengue country club
                         </div>
-                        <div class="price">$3</div>
+                        <div class="menu__price">$3</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">UVA country club
+                    <div class="menu__item">
+                        <div class="menu__dish">UVA country club
                         </div>
-                        <div class="price">$3</div>
+                        <div class="menu__price">$3</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Malta
+                    <div class="menu__item">
+                        <div class="menu__dish">Malta
                         </div>
-                        <div class="price">$3</div>
+                        <div class="menu__price">$3</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Oatmeal drink
+                    <div class="menu__item">
+                        <div class="menu__dish">Oatmeal drink
                         </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Strawberry lemonade
+                    <div class="menu__item">
+                        <div class="menu__dish">Strawberry lemonade
                         </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                     </div>
                 </div>
             </div>
             
     
             <!-- desserts -->
-            <div class="foodsection">
-                <img class="food menuimg" src="https://www.imperialsugar.com/sites/default/files/recipe/Tres-Leches-imperial.jpg" alt="">
-                <div class="food foodcategory">
-                    <h1 class="foodcategory1">Dessert of the day</h1>
-                    <div class="foodlist">
-                        <div class="dish">Bread Pudding with raisins
+            <div class="grid__item">
+                <img class="menu__img" src="https://www.imperialsugar.com/sites/default/files/recipe/Tres-Leches-imperial.jpg" alt="">
+                <div class="menu__text">
+                    <h1 class="menu__title">Dessert of the day</h1>
+                    <div class="menu__item">
+                        <div class="menu__dish">Bread Pudding with raisins
                         </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Flan
+                    <div class="menu__item">
+                        <div class="menu__dish">Flan
                         </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Tres leche
+                    <div class="menu__item">
+                        <div class="menu__dish">Tres leche
                             <p class="menu_item-descrip">three milks cake</p>
                         </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Fried dough
+                    <div class="menu__item">
+                        <div class="menu__dish">Fried dough
                         </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                     </div>
-                    <div class="foodlist">
-                        <div class="dish">Habichuela con dulce
+                    <div class="menu__item">
+                        <div class="menu__dish">Habichuela con dulce
                         </div>
-                        <div class="price">$5</div>
+                        <div class="menu__price">$5</div>
                     </div>
                 </div>
             </div>
@@ -673,12 +666,12 @@
     </section>
     
     <!-- catering section -->
-    <section id="catering" class="cateringmenu_section">
+    <section id="catering" class="catering">
     
         <h1 class="section_header">Menu de Catering</h1>
 
 
-        <div class="menu_content intro">
+        <div class="menu_intro">
             <p class="menu_intro_message">Let us cater your next event!</p>
             <p class="catering_note">If you don't see it on the menu, just ask if we can make it!</p>
             <p class="catering_note"> HALF: FEEDS 5-10  | FULL: FEEDS 15-20</p>
@@ -692,7 +685,7 @@
                                <h1 class="menu_item-title">Platano Maduros</h1>
                                <h5 class="menu_item-descrip">sweet plantanes</h5>
                            </div>
-                           <div class="price">
+                           <div class="menu__price">
                                <span>$30/$60</span>
                            </div>
                        </div>
@@ -701,7 +694,7 @@
                                <h1 class="menu_item-title">TOSTONES</h1>
                                <h5 class="menu_item-descrip">fried green plantanes</h5>
                            </div>
-                           <div class="price">
+                           <div class="menu__price">
                                <span>$30/$60</span>
                            </div>
                        </div>
@@ -710,7 +703,7 @@
                                <h1 class="menu_item-title">Yuca Hervida</h1>
                                <h5 class="menu_item-descrip">boiled yucca</h5>
                            </div>
-                           <div class="price">
+                           <div class="menu__price">
                                <span>$30/$60</span>
                            </div>
                        </div>
@@ -719,7 +712,7 @@
                                <h1 class="menu_item-title">Guineo Hervido</h1>
                                <h5 class="menu_item-descrip">boiled green banana</h5>
                            </div>
-                           <div class="price">
+                           <div class="menu__price">
                                <span>$35/$70</span>
                            </div>
                        </div>
@@ -728,7 +721,7 @@
                                <h1 class="menu_item-title">ESPAGUETI</h1>
                                <h5 class="menu_item-descrip">boiled green banana</h5>
                            </div>
-                           <div class="price">
+                           <div class="menu__price">
                                <span>$35/$70</span>
                            </div>
                        </div>
@@ -737,7 +730,7 @@
                                <h1 class="menu_item-title">Vegetales al Vapor</h1>
                                <h5 class="menu_item-descrip">steamed vegetables</h5>
                            </div>
-                           <div class="price">
+                           <div class="menu__price">
                                <span>$40/$80</span>
                            </div>
                        </div>
@@ -746,7 +739,7 @@
                                <h1 class="menu_item-title">Ensalada</h1>
                                <h5 class="menu_item-descrip">green salad</h5>
                            </div>
-                           <div class="price">
+                           <div class="menu__price">
                                <span>$20/$40</span>
                            </div>
                        </div>
@@ -755,7 +748,7 @@
                                <h1 class="menu_item-title">Ensalada de papas</h1>
                                <h5 class="menu_item-descrip">potato salad</h5>
                            </div>
-                           <div class="price">
+                           <div class="menu__price">
                                <span>$50/$100</span>
                            </div>
                        </div>
@@ -764,7 +757,7 @@
                                <h1 class="menu_item-title">Ensalada de Macarrones y atun</h1>
                                <h5 class="menu_item-descrip">macaroni and tuna salad</h5>
                            </div>
-                           <div class="price">
+                           <div class="menu__price">
                                <span>$50/$100</span>
                            </div>
                        </div>
@@ -773,7 +766,7 @@
                                <h1 class="menu_item-title">Habichuelas</h1>
                                <h5 class="menu_item-descrip">stewed pinto beans</h5>
                            </div>
-                           <div class="price">
+                           <div class="menu__price">
                                <span>$8/32oz</span>
                            </div>
                        </div>
@@ -782,7 +775,7 @@
                                <h1 class="menu_item-title">Pastelitos</h1>
                                <h5 class="menu_item-descrip">chicken beef cheese, ham & cheese and guava & cream cheese</h5>
                            </div>
-                           <div class="price">
+                           <div class="menu__price">
                                <span>$1.25/each</span>
                            </div>
                        </div>
@@ -791,7 +784,7 @@
                             <h1 class="menu_item-title">Arroz Blanco</h1>
                             <h5 class="menu_item-descrip">White Rice</h5>
                         </div>
-                        <div class="price">
+                        <div class="menu__price">
                             <span>$35/55</span>
                         </div>
                     </div>
@@ -800,7 +793,7 @@
                             <h1 class="menu_item-title">Arroz Amarillo</h1>
                             <h5 class="menu_item-descrip">yellow rice</h5>
                         </div>
-                        <div class="price">
+                        <div class="menu__price">
                             <span>$35/55</span>
                         </div>
                     </div>
@@ -809,7 +802,7 @@
                             <h1 class="menu_item-title">Arroz Moro de guandules</h1>
                             <h5 class="menu_item-descrip">rice served with pigeon peas</h5>
                         </div>
-                        <div class="price">
+                        <div class="menu__price">
                             <span>$40/80</span>
                         </div>
                     </div>
@@ -820,7 +813,7 @@
                         <h1 class="menu_item-title">Arroz Moro de habichuelas negras</h1>
                         <h5 class="menu_item-descrip">rice mixed with black beans</h5>
                     </div>
-                    <div class="price">
+                    <div class="menu__price">
                         <span>$55/80</span>
                     </div>
                 </div>
@@ -829,7 +822,7 @@
                         <h1 class="menu_item-title">Arroz Con Vegetales</h1>
                         <h5 class="menu_item-descrip">rice mixed with vegetables</h5>
                     </div>
-                    <div class="price">
+                    <div class="menu__price">
                         <span>$40/80</span>
                     </div>
                 </div>
@@ -838,7 +831,7 @@
                         <h1 class="menu_item-title">Chofan</h1>
                         <h5 class="menu_item-descrip">fried rice mixed with chicken, pork, shrimp, egg and mixed vegetables</h5>
                     </div>
-                    <div class="price">
+                    <div class="menu__price">
                         <span>$85/170</span>
                     </div>
                 </div>
@@ -847,7 +840,7 @@
                         <h1 class="menu_item-title">Pollo al Horno</h1>
                         <h5 class="menu_item-descrip">boiled chicken</h5>
                     </div>
-                    <div class="price">
+                    <div class="menu__price">
                         <span>$70/140</span>
                     </div>
                 </div>
@@ -856,7 +849,7 @@
                         <h1 class="menu_item-title">Pollo Guisado</h1>
                         <h5 class="menu_item-descrip">dominican stewed chicken</h5>
                     </div>
-                    <div class="price">
+                    <div class="menu__price">
                         <span>$60/120</span>
                     </div>
                 </div>
@@ -865,7 +858,7 @@
                         <h1 class="menu_item-title">Chicharron de pollo sin hueso</h1>
                         <h5 class="menu_item-descrip">boneless fried chicken chunks</h5>
                     </div>
-                    <div class="price">
+                    <div class="menu__price">
                         <span>$80/160</span>
                     </div>
                 </div>
@@ -874,7 +867,7 @@
                         <h1 class="menu_item-title">Pernil</h1>
                         <h5 class="menu_item-descrip">pork shoulder</h5>
                     </div>
-                    <div class="price">
+                    <div class="menu__price">
                         <span>$80/160</span>
                     </div>
                 </div>
@@ -883,7 +876,7 @@
                         <h1 class="menu_item-title">Costillas al horno con salsa BBQ</h1>
                         <h5 class="menu_item-descrip">ribs with bbq sauce</h5>
                     </div>
-                    <div class="price">
+                    <div class="menu__price">
                         <span>$85/170</span>
                     </div>
                 </div>
@@ -892,7 +885,7 @@
                         <h1 class="menu_item-title">Cerdo Guisado</h1>
                         <h5 class="menu_item-descrip">pork loin stew</h5>
                     </div>
-                    <div class="price">
+                    <div class="menu__price">
                         <span>$70/140</span>
                     </div>
                 </div>
@@ -901,7 +894,7 @@
                         <h1 class="menu_item-title">Chicharron</h1>
                         <h5 class="menu_item-descrip">fried pork belly</h5>
                     </div>
-                    <div class="price">
+                    <div class="menu__price">
                         <span>$12/lb</span>
                     </div>
                 </div>
@@ -910,7 +903,7 @@
                         <h1 class="menu_item-title">Bistec Enceballadro</h1>
                         <h5 class="menu_item-descrip">fried pork belly</h5>
                     </div>
-                    <div class="price">
+                    <div class="menu__price">
                         <span>$85/170</span>
                     </div>
                 </div>
@@ -919,7 +912,7 @@
                         <h1 class="menu_item-title">Bistec Enceballadro</h1>
                         <h5 class="menu_item-descrip">fried pork belly</h5>
                     </div>
-                    <div class="price">
+                    <div class="menu__price">
                         <span>$85/170</span>
                     </div>
                 </div>
@@ -928,7 +921,7 @@
                         <h1 class="menu_item-title">Bistec Guisado</h1>
                         <h5 class="menu_item-descrip">stewed beef</h5>
                     </div>
-                    <div class="price">
+                    <div class="menu__price">
                         <span>$85/170</span>
                     </div>
                 </div>
