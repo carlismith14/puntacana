@@ -295,10 +295,10 @@ nav {
 }
 
 
-.menu__item {
+/* .menu__item {
   display: flex;
-  justify-content: space-between;
-}
+  justify-content: center;
+} */
 
 
 .menu__dish {
@@ -369,6 +369,7 @@ nav {
 
 .price {
   font-size: 0.7rem;
+  display: none;
 }
 
 /*hours+location*/
