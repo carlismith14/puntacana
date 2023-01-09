@@ -1,6 +1,6 @@
-const navToggle = document.querySelector('.nav-toggle');
-const nav = document.querySelector('.navvb');
-const navLink = document.querySelectorAll('.nav_li')
+const navToggle = document.querySelector('.header__nav-toggle');
+const nav = document.querySelector('.nav');
+const navLink = document.querySelectorAll('.nav__li')
 
 navToggle.addEventListener('click', function(){
     nav.classList.toggle('active');
